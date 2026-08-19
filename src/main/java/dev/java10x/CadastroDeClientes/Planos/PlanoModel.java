@@ -27,5 +27,4 @@ public class PlanoModel {
 
     @OneToMany(mappedBy = "plano")
     private List<ClienteModel> clientes;
-
 }

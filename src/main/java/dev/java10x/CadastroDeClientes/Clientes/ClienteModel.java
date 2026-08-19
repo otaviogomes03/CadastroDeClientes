@@ -31,5 +31,4 @@ public class ClienteModel {
     @ManyToOne
     @JoinColumn(name = "planos_id")
     private PlanoModel plano;
-
 }
