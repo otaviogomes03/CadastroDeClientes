@@ -18,8 +18,13 @@ public class PlanoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "nivel")
     private String nivel;
+
     @OneToMany(mappedBy = "plano")
     private List<ClienteModel> clientes;
 

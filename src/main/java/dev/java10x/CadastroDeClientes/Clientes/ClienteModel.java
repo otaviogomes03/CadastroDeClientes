@@ -18,10 +18,16 @@ public class ClienteModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
+
     @Column(unique = true)
     private String email;
+
+    @Column(name = "telefone")
     private String telefone;
+
     @ManyToOne
     @JoinColumn(name = "planos_id")
     private PlanoModel plano;
